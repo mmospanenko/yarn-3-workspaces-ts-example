@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
-import "./App.css";
-import uuid from "@monotest/core";
+import logo from './logo.svg';
+import './App.css';
+import uuid from '@monotest/core';
 
 function App() {
   return (
@@ -16,8 +16,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React {uuid()}
+          Learn React
         </a>
+        {uuid}
       </header>
     </div>
   );

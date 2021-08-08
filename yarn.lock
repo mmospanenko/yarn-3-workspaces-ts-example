@@ -1972,7 +1972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monotest/core@workspace:*, @monotest/core@workspace:libs/core":
+"@monotest/core@workspace:libs/core":
   version: 0.0.0-use.local
   resolution: "@monotest/core@workspace:libs/core"
   dependencies:
@@ -1986,7 +1986,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monotest/main@workspace:apps/main"
   dependencies:
-    "@monotest/core": "workspace:*"
+    "@monotest/core": "workspace:libs/core"
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
@@ -6233,7 +6233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.11.0":
+"eslint@npm:^7.11.0, eslint@npm:^7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -9808,6 +9808,10 @@ fsevents@^1.2.7:
 "monotest@workspace:.":
   version: 0.0.0-use.local
   resolution: "monotest@workspace:."
+  dependencies:
+    eslint: ^7.32.0
+    prettier: ^2.3.2
+    typescript: ^4.3.5
   languageName: unknown
   linkType: soft
 
@@ -11692,6 +11696,15 @@ fsevents@^1.2.7:
   version: 1.0.4
   resolution: "prepend-http@npm:1.0.4"
   checksum: 01e7baf4ad38af02257b99098543469332fc42ae50df33d97a124bf8172295907352fa6138c9b1610c10c6dd0847ca736e53fda736387cc5cf8fcffe96b47f29
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "prettier@npm:2.3.2"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 17ce5784ac67621c292df58e2da60b2ee150c2d6aebea22a6ad9e52fcd6a5e66c349d0a8436ea3bd8ff9d778920a5f68000d7625b74f43558718a49755aa5259
   languageName: node
   linkType: hard
 

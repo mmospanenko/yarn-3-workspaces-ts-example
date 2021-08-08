@@ -7,7 +7,12 @@
     "libs/*"
   ],
   "scripts": {
-    "build": "yarn workspace monotest run build",
+    "build": "yarn workspace @monotest/main build",
     "start": "yarn workspace @monotest/main start"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
   }
 }
