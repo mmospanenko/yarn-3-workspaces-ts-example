@@ -6,9 +6,7 @@
     "libs/*"
   ],
   "scripts": {
-    "start": "yarn workspace @monotest/main start"
-  },
-  "devDependencies": {
-    "lerna": "^4.0.0"
+    "build": "yarn workspaces foreach run build",
+    "start": "yarn workspaces @monorepo/main start"
   }
 }
