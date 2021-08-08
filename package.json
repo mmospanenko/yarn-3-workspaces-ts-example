@@ -1,6 +1,13 @@
 {
-  "name": "root",
+  "name": "monotest",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "start": "yarn workspace @monotest/main start"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
