@@ -1972,7 +1972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monotest/core@^0.1.0, @monotest/core@workspace:libs/core":
+"@monotest/core@workspace:*, @monotest/core@workspace:libs/core":
   version: 0.0.0-use.local
   resolution: "@monotest/core@workspace:libs/core"
   dependencies:
@@ -1986,7 +1986,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@monotest/main@workspace:apps/main"
   dependencies:
-    "@monotest/core": ^0.1.0
+    "@monotest/core": "workspace:*"
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10

@@ -1,12 +1,13 @@
 {
   "name": "monotest",
   "private": true,
+  "packageManager": "yarn@3.0.0",
   "workspaces": [
     "apps/*",
     "libs/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach run build",
-    "start": "yarn workspaces @monorepo/main start"
+    "build": "yarn workspace monotest run build",
+    "start": "yarn workspace @monotest/main start"
   }
 }
